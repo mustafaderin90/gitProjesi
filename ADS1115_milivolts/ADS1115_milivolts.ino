@@ -34,20 +34,7 @@ void loop() {
     adc0.triggerConversion();
     pollAlertReadyPin();
     Serial.print("A0: "); Serial.print(adc0.getMilliVolts(false)); Serial.println("mV\t");
-    
-//    adc0.setMultiplexer(ADS1115_MUX_P1_NG);
-//    adc0.triggerConversion();
-//    pollAlertReadyPin();
-//    Serial.print("A1: "); Serial.print(adc0.getMilliVolts(false)); Serial.print("mV\t");
-//    
-//    adc0.setMultiplexer(ADS1115_MUX_P2_NG);
-//    adc0.triggerConversion();
-//    pollAlertReadyPin();
-//    Serial.print("A2: "); Serial.print(adc0.getMilliVolts(false)); Serial.print("mV\t");
-//    
-//    adc0.setMultiplexer(ADS1115_MUX_P3_NG);
-//    // Do conversion polling via I2C on this last reading: 
-//    Serial.print("A3: "); Serial.print(adc0.getMilliVolts(true)); Serial.print("mV");
+    Serial.println("deneme");
     delay(20);
 }
   
